@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iPhoneで美しい夜景を撮影するコツ | 大阪の夜景ガイド</title>
+    <meta name="description" content="iPhoneで夜景を綺麗に撮影するためのヒントとテクニックを紹介">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="page-header wrapper">
+        <h1><a href="index.html">大阪の夜景ガイドホーム</a></h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="spots.html">夜景スポット</a></li>
+                <li><a href="gallery.html">ギャラリー</a></li>
+                <li><a href="iphone-tips.html">iPhone撮影のコツ</a></li>
+                <li><a href="contact.html">コンタクト</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main id="iphone-tips" class="big-bg">
+        <div class="wrapper">
+            <h2 class="page-title">iPhoneで美しい夜景を撮影するコツ</h2>
+            <p>iPhoneを使って、夜景を鮮明かつ美しく撮影するためのヒントとテクニックを紹介します。</p>
+
+            <!-- 動画と説明をまとめて1つのセクションに -->
+            <section class="tip">
+                <div class="tip-content">
+                    <!-- 動画セクションを最初に -->
+                    <div class="tip-video">
+                        <div class="smartphone-bg">
+                            <video controls>
+                                <source src="videos/nightscape-tips.mp4" type="video/mp4">
+                                お使いのブラウザは動画の再生に対応していません。
+                            </video>
+                        </div>
+                    </div>
+            
+                    <!-- 説明セクションを次に -->
+                    <div class="tip-text">
+                        <h3>1. 撮りやすい場所で構図を決める</h3>
+                        <p>夜景撮影前にカメラを明るい場所で設定して、構図を決めてから撮影を始めると、より良い写真が撮れます。</p>
+            
+                        <h3>2. ナイトモードを活用する</h3>
+                        <p>iPhoneには「ナイトモード」があり、暗い場所でもシャッターを長時間開くことができるため、夜景撮影に最適です。</p>
+            
+                        <h3>3. フォーカスをロックする</h3>
+                        <p>夜景撮影では、ピントが合いづらくなることがあります。iPhoneのカメラでタップしてフォーカスをロックし、ピントがずれないようにしましょう。</p>
+            
+                        <h3>4. 露出を調整する</h3>
+                        <p>iPhoneで夜景を撮る際、露出（明るさ）を調整することで、暗いシーンでもきれいに撮影できます。明るすぎず、暗すぎない適切な露出を選びましょう。</p>
+            
+                        <h3>5. 三脚を使ってブレを防ぐ</h3>
+                        <p>動画では使っていませんが、夜景撮影には三脚の使用をおすすめします。カメラが動かないよう固定することで、シャープでブレのない写真が撮れます。</p>
+            
+                        <h3>6. スマホで見るイメージ</h3>
+                        <p>スマホ枠の中で動画を再生して、夜景撮影のコツを紹介します。</p>
+                    </div>
+                </div>
+            </section>
+            
+        </div> <!-- /.wrapper -->
+
+        <!-- CSS -->
+        <style>
+            .tip-content {
+                display: flex;
+                align-items: flex-start; /* PCサイズでは上寄せ */
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+        
+            .tip-text {
+                width: 60%; /* 文章部分の幅を設定 */
+                margin-right: 20px; /* 文章と動画の間隔 */
+            }
+        
+            .tip-video {
+                width: 35%; /* 動画部分の幅を設定 */
+                display: flex; /* フレックスボックスを使用して中央配置 */
+                justify-content: center; /* 水平方向に中央配置 */
+                align-items: center; /* 垂直方向に中央配置 */
+            }
+        
+            .smartphone-bg {
+                width: 300px;
+                height: 600px;
+                background: url('images/smartphone-frame.png') no-repeat center center;
+                background-size: cover;
+                position: relative;
+            }
+        
+            .smartphone-bg video {
+                position: absolute;
+                top: 10%; /* 動画を上に配置 */
+                left: 10%;
+                width: 80%;
+                height: 80%;
+                border-radius: 10px;
+            }
+        
+            /* スマホ画面の時のスタイル */
+            @media (max-width: 600px) {
+                .tip-content {
+                    flex-direction: column; /* 縦並びに変更 */
+                    align-items: center; /* 画面中央に寄せる */
+                    justify-content: center; /* 中央揃え */
+                }
+        
+                .tip-text {
+                    width: 100%; /* 文章部分の幅を全体に */
+                    margin-right: 0; /* 右側の余白をなくす */
+                }
+        
+                .tip-video {
+                    width: 100%; /* 動画部分の幅を全体に */
+                    display: flex;
+                    justify-content: center; /* 水平方向に中央配置 */
+                    align-items: center; /* 垂直方向に中央配置 */
+                    margin-top: 20px; /* 上部の余白を追加 */
+                }
+        
+                .smartphone-bg {
+                    position: relative;
+                    margin-top: 20px; /* 枠と文章の間に余白を追加 */
+                    margin-bottom: 20px; /* 枠とページ下部の間に余白を追加 */
+                }
+        
+                .smartphone-bg video {
+                    position: absolute;
+                    top: 10%; /* 動画を上に配置 */
+                    left: 10%;
+                    width: 80%;
+                    height: 80%;
+                    border-radius: 10px;
+                }
+            }
+            .tip-content {
+    display: flex;
+    flex-direction: column; /* 動画を上、テキストを下にする */
+    align-items: center; /* コンテンツを中央揃え */
+    margin-bottom: 20px;
+}
+
+@media (min-width: 601px) {
+    .tip-content {
+        flex-direction: row; /* PC画面では横並びに戻す */
+        align-items: flex-start;
+    }
+}
+
+.tip-video {
+    width: 100%; /* 動画部分の幅を調整 */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* スマホ画面での余白 */
+}
+
+@media (min-width: 601px) {
+    .tip-video {
+        width: 35%; /* PC画面では35%の幅 */
+        margin-bottom: 0;
+    }
+}
+
+.tip-text {
+    width: 100%; /* テキスト部分の幅を調整 */
+}
+
+@media (min-width: 601px) {
+    .tip-text {
+        width: 60%; /* PC画面では60%の幅 */
+    }
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    text-align: left;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+    text-align: left;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.tip-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tip-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .tip-content {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+        </style>
+        
+        
+        
+
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2024 Osaka Night Views</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>

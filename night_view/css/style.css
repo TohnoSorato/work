@@ -1,0 +1,245 @@
+/* 全体の設定 */
+body {
+    font-family: 'Philosopher', sans-serif;
+    color: #333;
+
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: black;
+    /* 背景色に透過を追加 */
+    /* max-height: 100px; */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10;
+    font-size: 2rem;
+
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+/* メインコンテンツ */
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* メインコンテンツの背景を少し白く */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* スポットタイトル */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* スポットセクション */
+section {
+    margin-bottom: 30px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+section h4 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* 詳細リンク */
+h1 > a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+h1 > a:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+        /* モバイルではヘッダーの文字サイズを小さく */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        /* メニューを縦に並べる */
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 15px;
+        /* メインコンテンツの余白を調整 */
+    }
+
+    img {
+        width: 100%;
+        /* 画像が画面幅に収まるように調整 */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+        /* スマートフォン用に文字サイズ調整 */
+    }
+
+    section h3 {
+        font-size: 1.2rem;
+        /* 小さい画面用にセクションタイトル調整 */
+    }
+}
+
+
+/* ここから追加 */
+.topHero {
+    margin: 0 0 30px;
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.hero {
+    width: 100%;
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/* 彩都なないろ公園の画像 */
+.spot-image1 {
+    width: 80%;
+    /* 親要素の幅に合わせる */
+    height: 700px;
+    /* 高さは固定 */
+    object-fit: cover;
+}
+
+/* 大阪城の画像 */
+.spot-image2 {
+    width: 80%;
+    height: 700px;
+    object-fit: cover;
+    margin: 0 auto;
+    /* 画像を中央に配置 */
+}
+
+/* 千里川の土手の画像 */
+.spot-image3 {
+    width: 80%;
+    height: 700px;
+    object-fit: cover;
+    margin: 0 auto;
+    /* 画像を中央に配置 */
+}
+
+/* 五月山 五月平展望台の画像 */
+.spot-image4 {
+    width: 80%;
+    height: 700px;
+    object-fit: cover;
+    margin: 0 auto;
+    /* 画像を中央に配置 */
+}
+
+/* 生駒山 僕らの広場の画像 */
+.spot-image5 {
+    width: 80%;
+    height: 700px;
+    object-fit: cover;
+    margin: 0 auto;
+    /* 画像を中央に配置 */
+}
+
+/* 十三峠展望台 */
+.spot-image6 {
+    width: 80%;
+    height: 700px;
+    object-fit: cover;
+    margin: 0 auto;
+    /* 画像を中央に配置 */
+}
+
+
+/* ここまで追加 */

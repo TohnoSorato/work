@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ギャラリー | 大阪の夜景ガイド</title>
+    <meta name="description" content="大阪の美しい夜景を写真で紹介">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        /* ギャラリーのスタイル */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* モーダルスタイル */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            /* 最前面に表示 */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white(0, 0, 0, 0.8);
+            overflow: auto;
+            /* モーダルのコンテンツを中央に表示 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            /* 画面に合わせて画像を縮小 */
+            max-height: 80vh;
+            /* 画面の高さを超えないように設定 */
+            object-fit: contain;
+            /* 画像が元の比率を保ったまま表示される */
+            margin: 0 auto;
+        }
+
+        #caption {
+            text-align: center;
+            color: #ccc;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="page-header wrapper">
+        <h1><a href="index.html">大阪の夜景ガイドホーム</a></h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="spots.html">夜景スポット</a></li>
+                <li><a href="gallery.html">ギャラリー</a></li>
+                <li><a href="iphone-tips.html">iPhone撮影のコツ</a></li>
+                <li><a href="contact.html">コンタクト</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main id="gallery" class="big-bg">
+        <div class="wrapper">
+            <h2 class="page-title">大阪の夜景ギャラリー</h2>
+            <p>大阪の美しい夜景を写真でお楽しみください。</p>
+
+            <div class="gallery">
+                <!-- 上段の3つ -->
+                <div class="gallery-item">
+                    <div>
+                        <a href="images/yakei1.jpeg" data-lightbox="image-set"><img src="images/yakei1.jpeg"></a>
+                        <h4>十三峠展望台</h4>
+                        <p class="recommendation">おすすめ度: ★★★☆☆</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <a href="images/yakei2.jpeg" data-lightbox="image-set"><img src="images/yakei2.jpeg"></a>
+                        <h4>生駒山 僕らの広場</h4>
+                        <p class="recommendation">おすすめ度: ★★★★★</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <a href="images/yakei3.jpeg" data-lightbox="image-set"><img src="images/yakei3.jpeg"></a>
+                        <h4>彩都なないろ公園</h4>
+                        <p class="recommendation">おすすめ度: ★★★★★</p>
+                    </div>
+                </div>
+
+                <!-- 下段の3つ -->
+                <div class="gallery-item">
+                    <div>
+                        <a href="images/yakei4.jpeg" data-lightbox="image-set"><img src="images/yakei4.jpeg"></a>
+                        <h4>大阪城</h4>
+                        <p class="recommendation">おすすめ度: ★★★★★</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <a href="images/yakei5.jpeg" data-lightbox="image-set"><img src="images/yakei5.jpeg"></a>
+                        <h4>五月山 五月平展望台</h4>
+                        <p class="recommendation">おすすめ度: ★★★★☆</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <a href="images/yakei6.jpeg" data-lightbox="image-set"><img src="images/yakei6.jpeg"></a>
+                        <h4>水呑地蔵院</h4>
+                        <p class="recommendation">おすすめ度: ★★★★☆</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- モーダル -->
+    <!-- <div id="modal" class="modal">
+        <span id="close" class="close"></span>
+        <img id="modalImage" class="modal-content" src="" alt="">
+        <div id="caption"></div>
+    </div> -->
+
+    <!-- フッター -->
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2024 Osaka Night Views</small></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <!-- <script>
+        // モーダル関連の要素
+        var modal = document.getElementById('modal');
+        var modalImg = document.getElementById('modalImage');
+        var captionText = document.getElementById('caption');
+        var closeBtn = document.getElementById('close');
+
+        // 画像要素を取得
+        var images = document.querySelectorAll('.gallery-item img');
+
+        // 画像をクリックした時の処理
+        images.forEach(function (img) {
+            img.onclick = function () {
+                modal.style.display = 'flex'; // モーダル表示の方法をflexに変更
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            };
+        });
+
+        // モーダルを閉じる処理
+        closeBtn.onclick = function () {
+            modal.style.display = 'none';
+        };
+
+        // モーダルの背景をクリックした時に閉じる処理
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+    </script> -->
+</body>
+
+</html>
